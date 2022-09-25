@@ -10,7 +10,7 @@ class Post extends Model
     use HasFactory;
 
     const ACTIVE = 'active';
-    const UNACTIVE = 'unactive';
+    const INACTIVE = 'inactive';
 
     protected $fillable = ['body', 'status', 'user_id'];
 
@@ -23,6 +23,6 @@ class Post extends Model
 
     public static function getStatuses()
     {
-        return [self::ACTIVE, self::UNACTIVE];
+        return [self::ACTIVE, self::INACTIVE];
     }
 }
