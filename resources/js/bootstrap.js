@@ -1,11 +1,7 @@
 import loadash from 'lodash'
+import jQuery from 'jquery'
 window._ = loadash
-
-
-import * as Popper from '@popperjs/core'
-window.Popper = Popper
-
-import 'bootstrap'
+window.$ = window.jQuery = jQuery
 
 
 /**
